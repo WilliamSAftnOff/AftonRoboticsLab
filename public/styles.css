@@ -1,0 +1,222 @@
+/* ===================================== */
+/* ======= OLD HOMEPAGE STYLES ========= */
+/* ===================================== */
+
+body {
+  font-family: 'Spectral', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #eaeaea;
+}
+
+/* HEADER NAVIGATION */
+header {
+  background-color: #3a0ca3;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-family: 'Gruppo', cursive;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #eaeaea;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #7b2cbf;
+}
+
+/* HERO SECTION */
+.hero {
+  background-image: url('your-animatronic-image-url');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  font-family: 'Gruppo', cursive;
+  text-shadow: 2px 2px 20px #000;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 10px #000;
+}
+
+/* ABOUT, PROJECTS, SUPPORT SECTIONS */
+.about, .projects, .support-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+}
+
+.about-content, .projects-content, .support-content {
+  max-width: 50%;
+}
+
+.about-content h2, .projects-content h2, .support-content h2 {
+  font-size: 2rem;
+  font-family: 'Gruppo', cursive;
+  margin-bottom: 10px;
+}
+
+.about-content p, .projects-content p, .support-content p {
+  font-size: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #3a0ca3;
+  color: #eaeaea;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #7b2cbf;
+  transform: scale(1.05);
+}
+
+/* SOCIAL MEDIA SECTION */
+.social-media {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1a1a1a;
+}
+
+.social-media h2 {
+  font-size: 2rem;
+  font-family: 'Gruppo', cursive;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #3a0ca3;
+  color: #eaeaea;
+}
+
+/* ===================================== */
+/* ======= PROJECT UPLOAD SYSTEM ======= */
+/* ===================================== */
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+}
+
+.upload-container h1 {
+  color: #4CAF50;
+}
+
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+}
+
+/* File Upload Box */
+.file-upload {
+  background-color: #333;
+  border: 2px dashed #00ffcc;
+  padding: 20px;
+  text-align: center;
+}
+
+.file-upload input[type="file"] {
+  display: none;
+}
+
+/* Upload Button */
+.upload-btn {
+  background-color: #00ffcc;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.upload-btn:hover {
+  background-color: #7b2cbf;
+  transform: scale(1.05);
+}
+
+/* PROJECT LIST */
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project-list li {
+  background-color: #222;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #333;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
