@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Afton Robotics Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Spectral&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./assets/Logo.jpg" alt="Afton Robotics Lab Logo">
+                <h1>Afton Robotics Lab</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/view/aftonlab/home">HOME</a></li>
+                <li><a href="/view/aftonlab/projects">PROJECTS</a></li>
+                <li><a href="/view/aftonlab/animatronics">ANIMATRONICS</a></li>
+                <li><a href="/view/aftonlab/about">ABOUT US</a></li>
+                <li><a href="/view/aftonlab/support-us">SUPPORT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Afton Robotics Lab</h2>
+                <p>Advancing animatronics, robotics, and AI, inspired by the legendary innovations of Five Nights at
+                    Freddy’s (FNAF) and William Afton’s legacy</p>
+            </div>
+        </section>
+
+        <section id="our-animatronics">
+            <h2>Our Animatronics</h2>
+            <div class="slider">
+                <div class="slider-track">
+                    <!-- Duplicate this set of images twice for seamless looping -->
+                    <div class="animatronic" onclick="openModal('springbonnie1.jpg')">
+                        <img src="assets/springbonnie1.jpg" alt="Spring Bonnie">
+                        <div class="hover-text">Spring Bonnie</div>
+                    </div>
+                    <div class="animatronic" onclick="openModal('springbonnie2.jpg')">
+                        <img src="assets/springbonnie2.jpg" alt="Spring Bonnie">
+                        <div class="hover-text">Spring Bonnie</div>
+                    </div>
+                    <div class="animatronic" onclick="openModal('springbonnie3.jpg')">
+                        <img src="assets/springbonnie3.jpg" alt="Spring Bonnie">
+                        <div class="hover-text">Spring Bonnie</div>
+                    </div>
+                    <div class="animatronic" onclick="openModal('springbonnie4.jpg')">
+                        <img src="assets/springbonnie4.jpg" alt="Spring Bonnie">
+                        <div class="hover-text">Spring Bonnie</div>
+                    </div>
+                    <div class="animatronic" onclick="openModal('freddyfazbear1.jpg')">
+                        <img src="assets/freddyfazbear1.jpg" alt="Freddy Fazbear">
+                        <div class="hover-text">Freddy Fazbear</div>
+                    </div>
+                    <div class="animatronic" onclick="openModal('freddyfazbear2.jpg')">
+                        <img src="assets/freddyfazbear2.jpg" alt="Freddy Fazbear">
+                        <div class="hover-text">Freddy Fazbear</div>
+                    </div>
+                    <div class="animatronic" onclick="openModal('puppet1.jpg')">
+                        <img src="assets/puppet1.jpg" alt="The Puppet">
+                        <div class="hover-text">The Puppet</div>
+                    </div>
+
+                    <!-- Duplicate the same set to create a seamless loop -->
+                    <div class="animatronic" onclick="openModal('springbonnie1.jpg')">
+                        <img src="assets/springbonnie1.jpg" alt="Spring Bonnie">
+                        <div class="hover-text">Spring Bonnie</div>
+                    </div>
+                    <div class="animatronic" onclick="openModal('springbonnie2.jpg')">
+                        <img src="assets/springbonnie2.jpg" alt="Spring Bonnie">
+                        <div class="hover-text">Spring Bonnie</div>
+                    </div>
+                    <div class="animatronic" onclick="openModal('springbonnie3.jpg')">
+                        <img src="assets/springbonnie3.jpg" alt="Spring Bonnie">
+                        <div class="hover-text">Spring Bonnie</div>
+                    </div>
+                    <div class="animatronic" onclick="openModal('springbonnie4.jpg')">
+                        <img src="assets/springbonnie4.jpg" alt="Spring Bonnie">
+                        <div class="hover-text">Spring Bonnie</div>
+                    </div>
+                    <div class="animatronic" onclick="openModal('freddyfazbear1.jpg')">
+                        <img src="assets/freddyfazbear1.jpg" alt="Freddy Fazbear">
+                        <div class="hover-text">Freddy Fazbear</div>
+                    </div>
+                    <div class="animatronic" onclick="openModal('freddyfazbear2.jpg')">
+                        <img src="assets/freddyfazbear2.jpg" alt="Freddy Fazbear">
+                        <div class="hover-text">Freddy Fazbear</div>
+                    </div>
+                    <div class="animatronic" onclick="openModal('puppet1.jpg')">
+                        <img src="assets/puppet1.jpg" alt="The Puppet">
+                        <div class="hover-text">The Puppet</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal for Enlarged Image -->
+        <div id="image-modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="full-image">
+        </div>
+
+        <section class="animatronic-showcase">
+            <div class="animatronic-content">
+                <h2>Animatronic Testing Showcase</h2>
+                <p>Take a look at our latest animatronic testing videos, showcasing realistic mechanical movements,
+                    facial expressions, and cutting-edge robotics technology.</p>
+                <video controls>
+                    <source src="./assets/animatronictest.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="note">*This is a real live testing footage captured directly from Afton Robotics Lab.</p>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="projects-content">
+                <h2>Our Projects</h2>
+                <p>Check out our latest animatronic engineering and robotics projects, featuring cutting-edge
+                    animatronic
+                    characters and advanced robotics systems.</p>
+                <a href="/view/aftonlab/projects" class="btn">View Projects</a>
+            </div>
+            <div class="projects-image">
+                <img src="your-image-link-here" alt="Projects">
+            </div>
+        </section>
+
+        <section class="support-us">
+            <div class="support-content">
+                <h2>Support Our Work</h2>
+                <p>We thrive on passion and dedication, building next-level animatronics and mechanical systems. If
+                    you'd like
+                    to support our work, you can contribute to our mission.</p>
+                <a href="/view/aftonlab/support-us" class="btn">Support Us</a>
+            </div>
+            <div class="support-image">
+                <img src="your-image-link-here" alt="Support Us">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.youtube.com/@WilliamSAfton-fq8re" target="_blank">
+                <img src="./assets/youtubelogo.png" alt="YouTube">
+            </a>
+            <a href="https://www.instagram.com/mr.afton.purpleg_/" target="_blank">
+                <img src="./assets/instagramlogo.png" alt="Instagram">
+            </a>
+        </div>
+        <p>© 2025 Afton Robotics Lab. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
